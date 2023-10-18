@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bd_Marba" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MARBASERVIDOR\SQLEXPRESS;Initial Catalog=bd_Marba;Integrated Security=True" SettingsObjectName="MarbaSoftware.Properties.Settings" SettingsPropertyName="ConexaoMarba" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Projetos2" Member="tbl_Projetos2">
+    <Type Name="tbl_Projetos2">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_Projetos2_tbl_Projetos2" Member="Filhos" ThisKey="ID" OtherKey="Pai" Type="tbl_Projetos2" />
+      <Association Name="tbl_Projetos2_tbl_Projetos2" Member="Pais" ThisKey="Pai" OtherKey="ID" Type="tbl_Projetos2" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bd_MarbaModelStoreContainer" CdmEntityContainer="bd_MarbaCupom">
+    <FunctionImportMapping FunctionImportName="PreencherCupomVendas" FunctionName="bd_MarbaModel.Store.PreencherCupomVendas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bd_MarbaModel.PreencherCupomVendas_Result">
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="Desconto" ColumnName="Desconto" />
+          <ScalarProperty Name="Preco" ColumnName="Preco" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

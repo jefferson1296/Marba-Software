@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bd_MarbaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bd_MarbaConnection" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="PreencherCupomVendas" ReturnType="Collection(bd_MarbaModel.PreencherCupomVendas_Result)">
+      <Parameter Name="operador" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="PreencherCupomVendas_Result">
+    <Property Type="String" Name="Produto" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+    <Property Type="Decimal" Name="Desconto" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="Preco" Nullable="false" Precision="7" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="38" Scale="2" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bd_MarbaModelRetiradasStoreContainer" CdmEntityContainer="bd_MarbaEntitiesCupomRetirada">
+    <FunctionImportMapping FunctionImportName="PreencherCupomRetirada" FunctionName="bd_MarbaModelRetiradas.Store.PreencherCupomRetirada">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bd_MarbaModelRetiradas.PreencherCupomRetirada_Result">
+          <ScalarProperty Name="ID_Produto" ColumnName="ID_Produto" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
